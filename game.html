@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drive Golf</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- شاشة البداية -->
+  <div id="intro-screen">
+    <img src="assets/intro.jpg" alt="Intro Image" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+
+  <!-- شاشة التحميل -->
+  <div id="loading-screen" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; justify-content: center; align-items: center; flex-direction: column; color: white; font-family: sans-serif;">
+    <div id="loading-text">Loading 1%</div>
+  </div>
+
+  <!-- عناصر التحكم -->
+  <div id="controls">
+    <button id="accelerate">Accelerate</button>
+    <button id="brake">Brake</button>
+    <button id="cameraBtn">Camera</button>
+    <img id="steering" src="assets/steering-wheel.png" alt="Steering Wheel" />
+  </div>
+
+  <!-- سكربت اللعبة -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
